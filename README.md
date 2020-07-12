@@ -10,7 +10,7 @@
 <p align="center">
   <a href="#-Sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-getting-started">Executando o projeto</a>
+  <a href="#-Executando-o-projeto">Executando o projeto</a>
 </p>
 
 
@@ -57,7 +57,7 @@ Adicione o arquivo `Insomnia.json` no aplicativo Insomnia, para testar as rotas
 **Faça o clone do projeto e acesse a pasta**
 
 ```bash
-$ git clone https://github.com/jhonicamara/meetup-api.git meetapp-api && cd meetapp-api
+$ git clone https://github.com/jhonicamara/meetapp-api.git meetapp-api && cd meetapp-api
 ```
 
 **Siga os passos a seguir**
