@@ -1,0 +1,549 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2020-07-12T12:23:10.306Z",
+  "__export_source": "insomnia.desktop.app:v2020.3.3",
+  "resources": [
+    {
+      "_id": "req_4bb5d067e7a54e1d93c8cec7f0cf43b0",
+      "authentication": {
+        "token": "{{ token2  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1579011784626,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1579011784626,
+      "method": "GET",
+      "modified": 1579012142652,
+      "name": "Index",
+      "parameters": [],
+      "parentId": "fld_57caff0713d9458e8519a56bc53c7ba5",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/subscriptions",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_57caff0713d9458e8519a56bc53c7ba5",
+      "created": 1578965249137,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578965249137,
+      "modified": 1578965249137,
+      "name": "Subscriptions",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "created": 1578518874284,
+      "description": "",
+      "modified": 1578518874284,
+      "name": "meetup",
+      "parentId": null,
+      "scope": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_2e990abf6ee5486aa68ed90435bf3792",
+      "authentication": {
+        "token": "{{ token2  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"meetup_id\": 3\n}"
+      },
+      "created": 1578965258841,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_11d7b34a0ec3496d8f1d084f29c63373",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578965258841,
+      "method": "POST",
+      "modified": 1579009369969,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_57caff0713d9458e8519a56bc53c7ba5",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/subscriptions",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4ed2eac104e14f0c9784c67382323f8c",
+      "authentication": {
+        "token": "{{ token2  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1579012545159,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1578965258791,
+      "method": "DELETE",
+      "modified": 1579014046118,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "fld_57caff0713d9458e8519a56bc53c7ba5",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/subscriptions/3",
+      "_type": "request"
+    },
+    {
+      "_id": "req_df8ba4d231f84b5aa8e046bde2554092",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1578951248518,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1578932063969,
+      "method": "GET",
+      "modified": 1581874413520,
+      "name": "Index",
+      "parameters": [
+        {
+          "description": "",
+          "id": "pair_e422366d727742929dca303ea402b7f3",
+          "name": "date",
+          "value": "2020-02-27"
+        },
+        {
+          "description": "",
+          "id": "pair_61633e64483e42bc99b2693aaf3c192e",
+          "name": "page",
+          "value": "1"
+        }
+      ],
+      "parentId": "fld_a05e9e665f9946dc9ed12c8a02c8285f",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/schedule",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_a05e9e665f9946dc9ed12c8a02c8285f",
+      "created": 1578950941749,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578950941749,
+      "modified": 1578950941749,
+      "name": "Schedule",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_b0f933b4c9ce4e499a14a2df43048309",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1578950949214,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1578932063994,
+      "method": "GET",
+      "modified": 1578951255946,
+      "name": "Index",
+      "parameters": [],
+      "parentId": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "created": 1578932054952,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578932054952,
+      "modified": 1578932054952,
+      "name": "Meetups",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_6b9c4cf3fe1248bb9b730f86e322e96a",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Progamando com React Native\",\n\t\"description\": \"Venha encontrar pessoas que também programam em React Native\",\n\t\"location\": \"Rua Alagoas 2001\",\n\t\"date\": \"2020-01-25T22:00:00-03:00\",\n\t\"image_id\": 1\n}"
+      },
+      "created": 1578932063944,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_6b656838e6e04f2bbc1d8fecadb97f8f",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578932063944,
+      "method": "POST",
+      "modified": 1579009356500,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups",
+      "_type": "request"
+    },
+    {
+      "_id": "req_ba372cd06d53426ba97047b19a429ff4",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1581424053038,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1578932063931.5,
+      "method": "GET",
+      "modified": 1581465176126,
+      "name": "Show",
+      "parameters": [],
+      "parentId": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups/1",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f8c5372dce4044b7bc863b579bfa24eb",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"title\": \"Progamando com Flutter\"\n}"
+      },
+      "created": 1578943769708,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_ab6e40a250584393867ff943ce776f8b",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578932063919,
+      "method": "PUT",
+      "modified": 1578947796317,
+      "name": "Update",
+      "parameters": [],
+      "parentId": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups/3",
+      "_type": "request"
+    },
+    {
+      "_id": "req_b9b9b4fb55ce4a9192a881975df01735",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {},
+      "created": 1578946249208,
+      "description": "",
+      "headers": [],
+      "isPrivate": false,
+      "metaSortKey": -1578932063894,
+      "method": "DELETE",
+      "modified": 1579009346099,
+      "name": "Delete",
+      "parameters": [],
+      "parentId": "fld_5025e0b4a1ff4ed59c815cefe8de3281",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/meetups/2",
+      "_type": "request"
+    },
+    {
+      "_id": "req_2c71fe293fe143db9161a90ce103c0f0",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "multipart/form-data",
+        "params": [
+          {
+            "description": "",
+            "fileName": "/home/camara/Imagens/flutter/beemoney/beemoney.jpg",
+            "id": "pair_d1954d882d9c48959b18b22c760e9ceb",
+            "name": "file",
+            "type": "file",
+            "value": ""
+          }
+        ]
+      },
+      "created": 1578926888307,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_d4a0cba736c844b289f791a21025015f",
+          "name": "Content-Type",
+          "value": "multipart/form-data"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578926888307,
+      "method": "POST",
+      "modified": 1585131911034,
+      "name": "Upload",
+      "parameters": [],
+      "parentId": "fld_bb31c4586f7540f5a0866acc293b6148",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/files",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_bb31c4586f7540f5a0866acc293b6148",
+      "created": 1578926880022,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578926880022,
+      "modified": 1578926880022,
+      "name": "Files",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_cd84f580bc1f4799b4f048a122d6d5ac",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Joao Admin\",\n\t\"email\": \"admin@meetup.com\",\n\t\"password\": \"1234567\"\n}"
+      },
+      "created": 1578518889550,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_e09f7ee5305640488476e4c189f9e4e0",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578518889551,
+      "method": "POST",
+      "modified": 1594556511366,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_5d72513fcc4846beb9b760bbdab306a8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_5d72513fcc4846beb9b760bbdab306a8",
+      "created": 1578518880049,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578518880049,
+      "modified": 1578518880049,
+      "name": "Users",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_f9bc19321e074eba97ce27176cc8bd7c",
+      "authentication": {
+        "token": "{{ token  }}",
+        "type": "bearer"
+      },
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Joao Camara\",\n\t\"email\": \"admin@meetUp.com\"\n}"
+      },
+      "created": 1578529890491,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_e09f7ee5305640488476e4c189f9e4e0",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578518889501,
+      "method": "PUT",
+      "modified": 1594556518643,
+      "name": "Update",
+      "parameters": [],
+      "parentId": "fld_5d72513fcc4846beb9b760bbdab306a8",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/users",
+      "_type": "request"
+    },
+    {
+      "_id": "req_d5aeb5c08cc2407db0d1ac22b336dbfa",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"admin@meetUp.com\",\n\t\"password\": \"1234567\"\n}"
+      },
+      "created": 1578527093371,
+      "description": "",
+      "headers": [
+        {
+          "id": "pair_e09f7ee5305640488476e4c189f9e4e0",
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "isPrivate": false,
+      "metaSortKey": -1578518889551,
+      "method": "POST",
+      "modified": 1594556534130,
+      "name": "Create",
+      "parameters": [],
+      "parentId": "fld_f3c855baf615456a8e8f040ceb6710e2",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingFollowRedirects": "global",
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "{{ base_url  }}/sessions",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_f3c855baf615456a8e8f040ceb6710e2",
+      "created": 1578527093355,
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1578462468858,
+      "modified": 1578527093355,
+      "name": "Sessions",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "request_group"
+    },
+    {
+      "_id": "env_fcb891cc410102a5cf3a8ce0ff73b97f7966d84d",
+      "color": null,
+      "created": 1578518874608,
+      "data": {
+        "base_url": "http://localhost:3333",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTgxMzMxMTEwLCJleHAiOjE1ODE5MzU5MTB9.4I2YptpiIAO6r5ve0nHbx0SmiDco0g90KlIfXoxLlCo",
+        "token2": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTgyMDcxMTczLCJleHAiOjE1ODI2NzU5NzN9.vYkX5MGf37O8SR5EpfKqihXBXvVFCG__F46mJ4dZNU4"
+      },
+      "dataPropertyOrder": {
+        "&": [
+          "base_url",
+          "token",
+          "token2"
+        ]
+      },
+      "isPrivate": false,
+      "metaSortKey": 1578518874608,
+      "modified": 1582071184530,
+      "name": "Base Environment",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_fcb891cc410102a5cf3a8ce0ff73b97f7966d84d",
+      "cookies": [],
+      "created": 1578518874615,
+      "modified": 1578518874615,
+      "name": "Default Jar",
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_6b774fbb396e48e6aa8bf16ea5a1e24d",
+      "contentType": "yaml",
+      "contents": "",
+      "created": 1591274716968,
+      "fileName": "meetup",
+      "modified": 1591274716968,
+      "parentId": "wrk_5007243f23264b9a9f601c27ba8e8a84",
+      "_type": "api_spec"
+    }
+  ]
+}
