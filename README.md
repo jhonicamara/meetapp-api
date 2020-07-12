@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  <b>Backend MeetUp</b>
+  <b>Backend MeetApp</b>
 </h3>
 
 
